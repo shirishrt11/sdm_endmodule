@@ -5,7 +5,7 @@ The system provides a user-friendly interface for browsing available events, sel
 and non-functional requirements for the Ticket Booking System.
 
 2. Scope
-The Ticket Booking System will provide the following features:
+The Ticket Booking System will provide the following attributes:
 
 User registration and login.
 Event browsing and searching.
@@ -29,11 +29,6 @@ Users can select seats from the available seating layout of the event venue.
 Users can choose the number of seats to reserve.
 The system should prevent double booking of seats.
 
-
-
-
-
-
 3.4 Payment Processing
 Users can make payments for their ticket reservations using various payment methods (credit card, PayPal, etc.).
 The system should securely handle payment transactions and ensure data privacy.
@@ -42,11 +37,11 @@ The system should securely handle payment transactions and ensure data privacy.
 After successful payment, users should receive a confirmation email with the ticket details.
 Users can view and print their tickets from their user profile.
 
-3.6 User Profile Management
+3.6 User Profile
 Users can update their profile information (name, email, password, etc.).
 Users can view their booking history and ticket details.
 
-3.7 Admin Panel
+3.7 Admin Page
 Admin users have access to an admin panel for managing events and users.
 Admin can add, edit, and delete events from the system.
 Admin can view and manage user accounts (block, delete, etc.).

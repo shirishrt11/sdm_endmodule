@@ -1,0 +1,67 @@
+
+User
+create table user(
+User_ID int Primary Key,
+Name varchar(30),
+Email varchar(30),
+Password varchar(30),
+Role varchar(30),
+Event varchar(30)
+)
+
+
+create table event(
+Event_ID int Primary Key,
+Title varchar(30)
+Description varchar(500)
+Date date,
+Time date
+)
+
+
+create table venue(
+Venue_ID int Primary Key ,
+Ticket_Availability varchar(30)
+
+)
+
+create table ticket(
+Ticket_ID int Primary Key,
+Event_ID int (Foreign Key referencing Event table)
+Seat_Number int
+Price double(9,2),
+Status varchar(30),
+Booking varchar(30)
+constraint fk_Event_ID foreign key (Event_ID) references event(Event_ID)
+
+)
+
+create table booking(
+Booking_ID int Primary Key,
+User_ID (Foreign Key referencing User table)
+Event_ID (Foreign Key referencing Event table)
+Booking_Date date, 
+Total_Price double(9,2),
+Status  varchar(30),
+Payment ,
+constraint fk_Event_ID foreign key (Event_ID) references Event(Event_ID),
+constraint fk_User_ID foreign key (Event_ID) references User (Event_ID)
+)
+
+create table payment(
+Payment_ID int Primary Key,
+Booking_ID int (Foreign Key referencing Booking table)
+Payment_Method varchar(30),
+Transaction_ID int,
+Amount double(9,2),
+Venue varchar(30),
+constraint fk_Booking_ID foreign key (Event_ID) references Booking (Booking_ID)
+)
+
+create table venue(
+Venue_ID int Primary Key,
+Name varchar(30),
+Address varchar(100),
+Capacity varchar(30),
+Facilities varchar(30),
+)
