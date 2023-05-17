@@ -1,0 +1,54 @@
+Ticket Booking System - Software Requirements Specification
+1. Introduction
+The Ticket Booking System is an online platform that allows users to book tickets for various events such as movies, concerts, sports events, etc. 
+The system provides a user-friendly interface for browsing available events, selecting seats, and making reservations. This document outlines the functional 
+and non-functional requirements for the Ticket Booking System.
+
+2. Scope
+The Ticket Booking System will provide the following features:
+
+User registration and login.
+Event browsing and searching.
+Seat selection and reservation.
+Payment processing.
+Ticket confirmation and generation.
+User profile management.
+Admin panel for event management and user administration.
+
+3. Functional Requirements
+3.1 User Registration and Login
+Users can register with the system by providing their basic information (name, email, password).
+Users can log in to the system using their registered email and password.
+
+3.2 Event Browsing and Searching
+Users can browse and search for events based on categories, dates, locations, etc.
+Users can view event details such as title, description, date, time, venue, and available seats.
+
+3.3 Seat Selection and Reservation
+Users can select seats from the available seating layout of the event venue.
+Users can choose the number of seats to reserve.
+The system should prevent double booking of seats.
+
+
+
+
+
+
+3.4 Payment Processing
+Users can make payments for their ticket reservations using various payment methods (credit card, PayPal, etc.).
+The system should securely handle payment transactions and ensure data privacy.
+
+3.5 Ticket Confirmation and Generation
+After successful payment, users should receive a confirmation email with the ticket details.
+Users can view and print their tickets from their user profile.
+
+3.6 User Profile Management
+Users can update their profile information (name, email, password, etc.).
+Users can view their booking history and ticket details.
+
+3.7 Admin Panel
+Admin users have access to an admin panel for managing events and users.
+Admin can add, edit, and delete events from the system.
+Admin can view and manage user accounts (block, delete, etc.).
+Admin can generate reports on ticket sales, revenue, etc
+
